@@ -1,3 +1,22 @@
+import datetime
+from django.utils import timezone
 from django.test import TestCase
 
-# Create your tests here.
+from polls.models import Poll
+
+class PollMethodTests(TestCase):
+
+	def test_was_published_recently_with_future_poll(self):
+		"""
+		was published_recently() should reutnr False for polls whose
+		pub_date is in the future
+		"""
+		future_poll = Poll(pub_date=timezone.now()+ datetime.timedelta(days=30))
+		self.assertEqual(future_poll.was_published_recently(), False)
+	def test_was_published_recently_with_old_poll(self):
+		"""
+		was_published_recently() should reutnr False for polls whose pub_date
+		is older than 1 day
+		"""
+		old_poll = Poll(pub_date=timezone.now() - datetime.timedelta(days=30))
+		self.assertEqual(old_poll.was_published_recently(), False)
