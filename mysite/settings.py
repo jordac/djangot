@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
-STATICFILES_FINDERS = (
+STATICFILES_DIRS = (
     "static", "c:/users/jordan/code/mysite/polls/static"
     )
 # Quick-start development settings - unsuitable for production
@@ -38,6 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'threadedcomments',
+    'django.contrib.comments',
     'polls',
 )
 

@@ -1,0 +1,15 @@
+li a {
+	color: green;
+}
+
+body {
+	background: 50% 50% white url("images/background.gif") no-repeat;
+	}
+
+.questionbox{
+	box-shadow: 2px;
+    display: inline-block;
+    background-color:;
+   /* border: 2px solid black;
+    border-radius:5px;*/
+}
