@@ -1,4 +1,6 @@
+{% load staticfiles %}
 <h1>{{ poll.question }}</h1>
+<link rel='stylesheet' type="text/css" href={% static 'polls/style.css' %} />
 
 <ul>
 {% for choice in poll.choice_set.all %}
@@ -6,4 +8,6 @@
 {% endfor %}
 </ul>
 
-<a href="{% url 'polls:detail' poll.id %}">Vote again?</a>
+<a class='voteagain' href="{% url 'polls:detail' poll.id %}">Vote again?</a>
+<div></div>
+<a class='selectnew' href="{% url 'polls:index' %}" >Select a new poll?</a>

@@ -13,3 +13,25 @@ body {
    /* border: 2px solid black;
     border-radius:5px;*/
 }
+
+.voteagain{
+	text-decoration: none;
+	font-family: times;
+	position: relative;	
+	background-color: #CCFFFF;
+	top:6em;
+	left:5em;
+	border-radius: 5px;
+	border: 5px solid blue;
+
+}
+.selectnew{
+	text-decoration: none;
+	font-family: times;
+	position: fixed;
+	background-color: #CCFFFF;
+	top:10em;
+	left:5em;
+	border: 5px solid blue;
+	border-radius: 5px;
+}
