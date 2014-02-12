@@ -30,6 +30,7 @@ body {
 	font-family: times;
 	position: fixed;
 	background-color: #CCFFFF;
+	box-shadow: 0 0 20px, #CCFFFF;
 	top:10em;
 	left:5em;
 	border: 5px solid blue;

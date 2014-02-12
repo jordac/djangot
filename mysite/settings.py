@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'disqus',
     'polls',
 )
 
@@ -54,6 +55,8 @@ ROOT_URLCONF = 'mysite.urls'
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
+DISSQUS_API_KEY="vG7LW9yUpI6E0kPYQP6zxybeXGwkWiEn9WbWgUu1vd1kroByoDUBozmF73JJPM6Z"
+DISQUS_WEBSITE_SHORTNAME="pollcomments"
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
